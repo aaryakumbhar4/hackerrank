@@ -10,8 +10,6 @@
 
 char* readline();
 
-
-
 int main()
 {
     char* n_endptr;
@@ -21,33 +19,28 @@ int main()
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
 
     // Write Your Code Here
-    scanf("%d",&n);
-    if(n<10)
-    {
-        if(n==1)
+    if(n>=1 && n<=9)
+    {   if(n==1)
         printf("one");
-        else if(n==2)
+        if(n==2)
         printf("two");
-        else if(n==3)
+        if(n==3)
         printf("three");
-        else if(n==4)
+        if(n==4)
         printf("four");
-        else if(n==5)
+        if(n==5)
         printf("five");
-        else if(n==6)
+        if(n==6)
         printf("six");
-        else if(n==7)
+        if(n==7)
         printf("seven");
-        else if(n==8)
+        if(n==8)
         printf("eight");
-        else
+        if(n==9)
         printf("nine");
-        
     }
-    else{
+    else
         printf("Greater than 9");
-    }
-    
 
     return 0;
 }
